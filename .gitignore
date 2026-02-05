@@ -1,0 +1,10 @@
+# GitHub Pages
+# Ignora archivos específicos de desarrollo
+.DS_Store
+.vscode/
+node_modules/
+*.log
+Thumbs.db
+.idea/
+*.swp
+*.swo

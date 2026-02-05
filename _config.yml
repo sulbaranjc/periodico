@@ -1,0 +1,30 @@
+# Configuración de Jekyll para GitHub Pages
+title: JC DEPORTES
+description: Periódico Digital de Deportes
+baseurl: "/periodico"
+url: "https://sulbaranjc.github.io"
+author: Periodico Digital
+email: contacto@jcdeportes.com
+
+# Jekyll Configuration
+markdown: kramdown
+theme: null
+highlighter: rouge
+
+# Build settings
+exclude:
+  - .git
+  - .gitignore
+  - .DS_Store
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+
+# Prevent Jekyll from processing files
+keep_files:
+  - img
+  - styles
+  - CNAME
+
+# GitHub Pages configuration
+github_pages: true
