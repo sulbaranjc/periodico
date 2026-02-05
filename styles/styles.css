@@ -10,8 +10,8 @@ html, body {
 }
 
 body {
-  background-color: #0099ff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: #333;
 }
@@ -19,41 +19,49 @@ body {
 /* Header */
 .header {
   background-color: #ffffff;
-  padding: 40px 20px;
-  text-align: left;
-  border-bottom: 3px solid #5ec76e;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 2px solid #000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .title {
-  font-size: 3.5em;
-  color: #5ec76e;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-size: 2.8em;
+  color: #000;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  font-family: Georgia, serif;
 }
 
 /* Container principal */
 .container {
   max-width: 1200px;
-  margin: 30px auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 30px 20px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 20px;
+  gap: 30px;
+  background-color: #ffffff;
+  min-height: calc(100vh - 120px);
 }
 
 /* Artículo Principal */
 .article-main {
   grid-column: 1;
-  background-color: #ffffff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+  border-bottom: 3px solid #f0f0f0;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .article-main .article-image {
   width: 100%;
-  height: 350px;
+  height: 400px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .article-main .article-image img {
@@ -63,14 +71,16 @@ body {
 }
 
 .article-main .article-content {
-  padding: 25px;
+  padding: 0;
 }
 
 .article-main h2 {
-  font-size: 1.8em;
-  color: #333;
-  margin-bottom: 10px;
-  line-height: 1.3;
+  font-size: 2em;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: Georgia, serif;
 }
 
 /* Sidebar */
@@ -78,22 +88,25 @@ body {
   grid-column: 2;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 /* Artículos pequeños (sidebar) */
 .article-small {
-  background-color: #ffffff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 20px;
 }
 
 .article-small .article-image {
   width: 100%;
-  height: 150px;
+  height: 180px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 12px;
 }
 
 .article-small .article-image img {
@@ -103,14 +116,15 @@ body {
 }
 
 .article-small .article-content {
-  padding: 15px;
+  padding: 0;
 }
 
 .article-small h3 {
-  font-size: 1.1em;
-  color: #333;
+  font-size: 1em;
+  color: #1a1a1a;
   margin-bottom: 8px;
-  line-height: 1.3;
+  line-height: 1.4;
+  font-weight: 700;
 }
 
 /* Galería de artículos */
@@ -118,22 +132,25 @@ body {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 25px;
+  padding-top: 30px;
+  border-top: 3px solid #f0f0f0;
 }
 
 /* Artículos en grid */
 .article-grid {
-  background-color: #ffffff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
 }
 
 .article-grid .article-image {
   width: 100%;
-  height: 150px;
+  height: 140px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 12px;
 }
 
 .article-grid .article-image img {
@@ -143,29 +160,30 @@ body {
 }
 
 .article-grid .article-content {
-  padding: 15px;
+  padding: 0;
 }
 
 .article-grid h3 {
-  font-size: 0.95em;
-  color: #333;
+  font-size: 0.9em;
+  color: #1a1a1a;
   margin-bottom: 8px;
-  line-height: 1.3;
-  font-weight: 600;
+  line-height: 1.4;
+  font-weight: 700;
 }
 
 /* Información del artículo */
 .article-meta {
-  font-size: 0.85em;
-  color: #999;
-  margin-top: 8px;
+  font-size: 0.8em;
+  color: #777;
+  margin-top: 6px;
+  font-weight: 500;
 }
 
 .article-author {
-  font-size: 0.85em;
-  color: #5ec76e;
-  font-weight: 600;
-  margin-top: 8px;
+  font-size: 0.8em;
+  color: #0066cc;
+  font-weight: 700;
+  margin-top: 6px;
 }
 
 /* Badge de vídeo */
@@ -173,11 +191,11 @@ body {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #ffffff;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: 0.8em;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 0.75em;
   font-weight: bold;
 }
 
